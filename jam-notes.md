@@ -25,3 +25,20 @@
 > When the build-to-deploy cycle becomes a regular occurrence, you need to know that when a deploy goes live, it really goes live. Eliminate any doubt by making sure your CDN can handle instant cache purges.
 
 Source: https://jamstack.org/best-practices/
+
+#### Atlantis-tasks related notes
+
+###### Hybrid approach
+
+- On premise or VM host with server management
+- API keys in .env
+- Static content on build for static components
+- Client side routes for dynamic json data in react virtual table
+- Updates using fetch (probably through GraphQL)
+
+###### Static approach
+
+- Netlify CDN hosting
+- API keys in .env
+- Static content with dynamic exceptions (selectors?) in mongo cluster
+- Rebuild every 30 min when usage detected for core data (webhooks on netlify)
