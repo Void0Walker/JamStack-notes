@@ -42,3 +42,4 @@ Source: https://jamstack.org/best-practices/
 - API keys in .env
 - Static content with dynamic exceptions (selectors?) in mongo cluster
 - Rebuild every 30 min when usage detected for core data (webhooks on netlify)
+- Refresh feed option for instant rebuild
